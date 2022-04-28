@@ -393,6 +393,30 @@
             <use href="./images/symbol-defs.svg#icon-close"></use>
           </svg>
         </button>
+        <form class="modal-form">
+          <h2 class="form-header">Оставьте свои данные, мы вам перезвоним</h2>
+          <label class="form-lable">
+            <span class="lable-name">Имя</span>
+            <input type="text" name="name" class="form-imput" autocomplete="off">
+          </label>
+          <label class="form-lable">
+            <span class="lable-name">Телефон</span>
+            <input type="tel" name="tel" class="form-imput">
+          </label>
+          <label class="form-lable">
+            <span class="lable-name">Почта</span>
+            <input type="email" name="mail" class="form-imput">
+          </label>
+          <label class="form-lable">
+            <span class="lable-name">Комментарий</span>
+            <textarea name="text" cols="30" rows="10" class="form-text" placeholder="Введите текст"></textarea>
+          </label>
+          <label class="checkbox-lable">
+            <input type="checkbox" class="input-checkbox" name="accept" value="true">
+            <span class="checkbox-name">Соглашаюсь с рассылкой и принимаю <a href="" class="accept-link">Условия договора</a></span>
+          </label>
+          <button type="submit" class="submit-button">Отправить</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>

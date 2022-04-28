@@ -681,6 +681,13 @@ h1,h2,h3,h4,h5,h5,p,ul{
     height: 581px;
     
     background-color: var(--contrast-color);
+
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+
+    padding: 40px;
 }
 
 .modal-btn {
@@ -703,4 +710,110 @@ h1,h2,h3,h4,h5,h5,p,ul{
     height: 18px;
     top: 5px;
     right: 5px;
+}
+
+.form-header{
+    margin-bottom: 12px;
+}
+
+.modal-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-lable:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.form-lable{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-imput{
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.form-imput:focus, .form-text:focus {
+    outline: none;
+    border-color: var(--accent-color);
+}
+
+.form-text{
+    resize: none;
+    padding: 12px 16px;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+
+    height: 120px;
+}
+
+.form-text::placeholder{
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    
+    color: rgba(117, 117, 117, 0.5);
+}
+
+.form-header{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    
+    color: var(--header-color);
+}
+
+.lable-name{
+    font-size: 12px;
+    line-height: 1.17;
+    
+    letter-spacing: 0.01em;
+    
+    color: var(--paragraph-color);
+
+    margin-bottom: 4px;
+}
+
+.checkbox-lable{
+    display: flex;
+    justify-content: center;
+}
+
+.checkbox-name{
+    margin-left: 8px;
+    font-size: 14px;
+    line-height: 1.71;
+    
+    letter-spacing: 0.03em;
+
+    color: var(--paragraph-color);
+}
+
+.accept-link{
+    color: var(--accent-color);
+}
+
+.submit-button{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 200px;
+    height: 50px;
+
+    margin-top: 30px;
+
+    color: #fff;
+
+    background-color: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
 }
