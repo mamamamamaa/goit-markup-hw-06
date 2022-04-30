@@ -20,6 +20,11 @@ h1,h2,h3,h4,h5,h5,p,ul{
     padding: 0;
 }
 
+input, textarea{
+    margin: 0;
+    padding: 0;
+}
+
 /* --------------- HEADER------------------ */
 
 .pic{
@@ -489,6 +494,11 @@ h1,h2,h3,h4,h5,h5,p,ul{
 }
 
 .social-header{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+
     text-transform: uppercase;
     color: var(--contrast-color);
 }
@@ -535,6 +545,10 @@ h1,h2,h3,h4,h5,h5,p,ul{
     border-radius: 4px;
     background-color: transparent;
     outline: none;
+}
+
+.footer-imput:focus{
+    border-color: var(--contrast-color);
 }
 
 .footer-btn{
@@ -703,7 +717,7 @@ h1,h2,h3,h4,h5,h5,p,ul{
 
 
 
-/* ------------------------------- MODAL ICON-------------------------------------- */
+/* ------------------------------- MODAL-------------------------------------- */
 
 .is-hidden{
     visibility: hidden;
@@ -893,6 +907,10 @@ h1,h2,h3,h4,h5,h5,p,ul{
     color: var(--accent-color);
 }
 
+.accept-link:hover {
+    text-decoration: none;
+}
+
 .check-icon{
     position: relative;
     width: 16px;
@@ -908,6 +926,7 @@ h1,h2,h3,h4,h5,h5,p,ul{
     z-index: 1;
     background-color: var(--accent-color);
     border-color: transparent;
+    
 }
 
 .modal-check-icon{
@@ -924,6 +943,10 @@ h1,h2,h3,h4,h5,h5,p,ul{
     z-index:2;
 }
 
+.input-checkbox:focus + .check-icon{
+    box-shadow: 0 0 8px rgb(0, 0, 0, 0.5);
+}
+
 .input-checkbox{
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -933,8 +956,8 @@ h1,h2,h3,h4,h5,h5,p,ul{
 }
 
 .submit-button{
-    min-width: 200px;
     height: 50px;
+    width: 200px;
 
     color: #fff;
 
